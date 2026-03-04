@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mission Control | Kumky Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <span class="emoji">🐙</span>
+      <h1>Mission Control</h1>
+    </div>
+    <div class="status-bar">
+      <span id="server-status" class="status-indicator online">● Online</span>
+      <span id="current-time"></span>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="tasks">📋 Tasks</button>
+    <button class="tab" data-tab="content">📝 Content</button>
+    <button class="tab" data-tab="calendar">📅 Calendar</button>
+    <button class="tab" data-tab="memory">🧠 Memory</button>
+    <button class="tab" data-tab="team">👥 Team</button>
+    <button class="tab" data-tab="office">🏢 Office</button>
+  </nav>
+
+  <main>
+    <!-- Tasks Panel -->
+    <section id="tasks" class="panel active">
+      <div class="panel-header">
+        <h2>📋 Task Board</h2>
+        <button class="btn primary" onclick="showAddTask()">+ New Task</button>
+      </div>
+      <div class="task-columns">
+        <div class="column" data-status="planned">
+          <h3>Planned</h3>
+          <div class="task-list" id="tasks-planned"></div>
+        </div>
+        <div class="column" data-status="in-progress">
+          <h3>In Progress</h3>
+          <div class="task-list" id="tasks-in-progress"></div>
+        </div>
+        <div class="column" data-status="done">
+          <h3>Done</h3>
+          <div class="task-list" id="tasks-done"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Pipeline -->
+    <section id="content" class="panel">
+      <div class="panel-header">
+        <h2>📝 Content Pipeline</h2>
+        <button class="btn primary" onclick="showAddContent()">+ New Content</button>
+      </div>
+      <div class="pipeline-stages">
+        <div class="stage" data-stage="idea"><h3>💡 Idea</h3><div class="content-list" id="content-idea"></div></div>
+        <div class="stage" data-stage="script"><h3>📜 Script</h3><div class="content-list" id="content-script"></div></div>
+        <div class="stage" data-stage="review"><h3>👀 Review</h3><div class="content-list" id="content-review"></div></div>
+        <div class="stage" data-stage="ready"><h3>✅ Ready</h3><div class="content-list" id="content-ready"></div></div>
+        <div class="stage" data-stage="published"><h3>🚀 Published</h3><div class="content-list" id="content-published"></div></div>
+      </div>
+    </section>
+
+    <!-- Calendar -->
+    <section id="calendar" class="panel">
+      <div class="panel-header">
+        <h2>📅 Calendar</h2>
+        <button class="btn primary" onclick="showAddEvent()">+ New Event</button>
+      </div>
+      <div class="calendar-grid" id="calendar-grid"></div>
+    </section>
+
+    <!-- Memory -->
+    <section id="memory" class="panel">
+      <div class="panel-header">
+        <h2>🧠 Memory</h2>
+        <input type="text" id="memory-search" placeholder="Search memory..." class="search-input">
+      </div>
+      <div class="memory-container">
+        <div class="memory-nav" id="memory-nav"></div>
+        <div class="memory-content" id="memory-content">
+          <p class="hint">Select a memory file to view</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="panel">
+      <div class="panel-header">
+        <h2>👥 Team</h2>
+      </div>
+      <div class="team-grid" id="team-grid"></div>
+    </section>
+
+    <!-- Office -->
+    <section id="office" class="panel">
+      <div class="panel-header">
+        <h2>🏢 Office View</h2>
+      </div>
+      <div class="office-floor" id="office-floor"></div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <h3 id="modal-title">Add New</h3>
+      <form id="modal-form"></form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -45,6 +45,7 @@ This file contains curated, important information that should persist across ses
 2. Install missing tools via apt / npm / pip / brew
 3. If something fails 3 times → STOP and report (don't retry forever)
 4. Always provide port number when running web servers
+5. **Tailscale VPN REQUIRED** for mobile/remote access — app must be "Connected"
 
 ---
 
@@ -77,7 +78,49 @@ Note: Some skills require API keys (Brave Search, Google Calendar)
 
 ## Important Dates
 
-**2026-03-04:** First boot, identity established, GitHub integration set up
+**2026-03-04:** First boot, identity established, GitHub integration set up, Mission Control Dashboard built
+
+---
+
+## Projects
+
+### Mission Control Dashboard
+**Location:** `/home/atlas/.openclaw/workspace/mission-control/`
+**URL:** `http://0.0.0.0:3456` (accessible via Tailscale)
+**Status:** ✅ Running
+
+**Components:**
+1. **Task Board** - Kanban with drag-and-drop (planned/in-progress/done)
+2. **Content Pipeline** - 5 stages (idea→script→review→ready→published)
+3. **Calendar** - Monthly view with task/meeting/reminder/cron events
+4. **Memory** - MEMORY.md + daily files viewer with search
+5. **Team** - 6 agent cards (Kumky, Developer, Writer, Designer, Researcher, Security)
+6. **Office** - Visual floor plan with avatar positions
+
+**Tech Stack:** Node.js + Express + vanilla HTML/CSS/JS
+**Theme:** Dark GitHub-inspired design
+
+---
+
+### Lead Generation Project (In Progress)
+**Started:** 2026-03-04
+**Status:** Planning / Pending user confirmation
+
+**Target Audience:**
+- **Company Size:** Medium to Large enterprises
+- **Industry Priority:** Technology, Automotive, Retail
+- **ValiVohr:** Turkey market
+- **ArcLoom:** Global market
+
+**Prototype Plan (50 leads test):**
+1. LinkedIn company scraper
+2. Email finder (Hunter.io / Apollo)
+3. Email warmup (new domain)
+4. Personalized templates
+5. Simple tracking dashboard
+
+**Pending:**
+- User needs to confirm: email domain availability, API keys, start approval
 
 ---
 

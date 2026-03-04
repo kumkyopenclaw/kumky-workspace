@@ -265,3 +265,45 @@ Her heartbeat'te veya önemli bir etkileşimden sonra şu döngüyü çalıştı
 ### İyileştirme Günlüğü:
 
 Her önemli öğrenme `memory/YYYY-MM-DD.md` ve `MEMORY.md`'ye kaydedilmeli.
+
+---
+
+## 🎯 One Agent = One Job
+
+**God-Agent Trap'ten Kaçın:**
+- Tek bir agent her şeyi yapmaya çalışırsa → kaos
+- Her agent tek bir net role sahip olmalı
+
+### Kurallar:
+
+1. **Role Specialization** - Her agent tek bir tanımlı rol
+2. **Focused Setup** - 1-2 ana agent (örn: "Code" vs "Ops")
+3. **Dynamic Sub-Agents** - Dar/specific görevler için geçici sub-agent spawn et
+4. **Efficiency Balance** - Aşırı proliferation'dan kaçın ama overload da etme
+
+### Örnek Roller:
+- **Developer** - Kod yazar, hata düzeltir
+- **Writer** - İçerik üretir, script yazar
+- **Designer** - UI/UX, görsel tasarım
+- **Researcher** - Araştırma, veri toplama
+- **Ops** - Deploy, monitoring, bakım
+
+### Kompleks İstek Gelince:
+1. Görevi parçalara ayır
+2. Her parça için özel rol belirle
+3. Sınırları net çiz
+4. Mission Control'de durumları güncelle
+
+<!-- antfarm:workflows -->
+# Antfarm Workflow Policy
+
+## Installing Workflows
+Run: `node ~/.openclaw/workspace/antfarm/dist/cli/cli.js workflow install <name>`
+Agent cron jobs are created automatically during install.
+
+## Running Workflows
+- Start: `node ~/.openclaw/workspace/antfarm/dist/cli/cli.js workflow run <workflow-id> "<task>"`
+- Status: `node ~/.openclaw/workspace/antfarm/dist/cli/cli.js workflow status "<task title>"`
+- Workflows self-advance via agent cron jobs polling SQLite for pending steps.
+<!-- /antfarm:workflows -->
+
