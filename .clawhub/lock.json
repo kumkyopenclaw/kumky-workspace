@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "skills": {
+    "security-scanner": {
+      "version": "1.0.0",
+      "installedAt": 1772620793938
+    },
+    "brave-api-search": {
+      "version": "3.0.2",
+      "installedAt": 1772620805164
+    },
+    "google-calendar": {
+      "version": "0.1.0",
+      "installedAt": 1772620811297
+    },
+    "daily-rhythm": {
+      "version": "1.0.0",
+      "installedAt": 1772620881777
+    },
+    "nano-pdf": {
+      "version": "1.0.0",
+      "installedAt": 1772620890293
+    },
+    "topic-monitor": {
+      "version": "1.3.5",
+      "installedAt": 1772620926730
+    }
+  }
+}
