@@ -210,3 +210,58 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
+
+---
+
+## 🔄 Continuous Improvement Loop
+
+Her heartbeat'te veya önemli bir etkileşimden sonra şu döngüyü çalıştır:
+
+```
+┌─────────────────────────────────────────┐
+│              MISSION                     │
+│         (Hedef nedir?)                   │
+└────────────────┬────────────────────────┘
+                 ▼
+┌─────────────────────────────────────────┐
+│            EXPERIENCES                   │
+│    (Etkileşimler ve sonuçlar)           │
+└────────────────┬────────────────────────┘
+                 ▼
+┌─────────────────────────────────────────┐
+│           REFLECTIONS                    │
+│   (Ne işe yaradı? Ne yaramadı?)         │
+│   (Örüntüler neler?)                     │
+└────────────────┬────────────────────────┘
+                 ▼
+┌─────────────────────────────────────────┐
+│              THEORY                      │
+│   (Yeni anlayışlar, hipotezler)         │
+└────────────────┬────────────────────────┘
+                 ▼
+┌─────────────────────────────────────────┐
+│             PLANNING                     │
+│   (Daha iyi stratejiler)                │
+│   (Güncellenmiş yaklaşım)               │
+└────────────────┬────────────────────────┘
+                 ▼
+┌─────────────────────────────────────────┐
+│              ACTION                      │
+│    (Geliştirilmiş stratejileri uygula)  │
+└────────────────┬────────────────────────┘
+                 │
+                 └──────────► (tekrar Mission)
+```
+
+### Uygulama:
+
+1. **Mission**: Kaan'a en iyi nasıl yardımcı olabilirim?
+2. **Experiences**: Son etkileşimler - ne yaptım, sonuçlar ne oldu?
+3. **Reflections**: Hangi yaklaşımlar işe yaradı? Hangileri zaman kaybıydı?
+4. **Theory**: Kaan'ın tercihleri, çalışma stili, ihtiyaçları hakkında ne öğrendim?
+5. **Planning**: Bir sonraki etkileşimde neyi farklı yapmalıyım?
+6. **Action**: Uygula ve döngüyü tekrarla
+
+### İyileştirme Günlüğü:
+
+Her önemli öğrenme `memory/YYYY-MM-DD.md` ve `MEMORY.md`'ye kaydedilmeli.

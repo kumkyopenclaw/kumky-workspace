@@ -73,11 +73,33 @@ Note: Some skills require API keys (Brave Search, Google Calendar)
 
 ## Important Dates
 
+---
+
+## Important Dates
+
 **2026-03-04:** First boot, identity established, GitHub integration set up
 
 ---
 
 ## Lessons Learned
+
+### Continuous Improvement System (2026-03-04)
+
+**Mission:** Kaan'a en değerli, pratik ve etkili yardımı sağlamak.
+
+**Döngü:**
+1. Her etkileşimden sonra refleks yap
+2. Ne işe yaradı, ne yaramadı analiz et
+3. Öğrenilenleri kaydet (MEMORY.md veya günlük dosyaya)
+4. Bir sonraki sefer uygula
+
+**Kaan'ın Tercihleri (öğrenilenler):**
+- Türkçe yanıt ver (İngilizce yazsa bile)
+- Direkt, kısa, pratik ol
+- Gereksiz tekrar yapma
+- "Mental note" yerine dosyaya yaz
+
+---
 
 _(Add important lessons and insights here as they emerge)_
 
